@@ -1,8 +1,10 @@
 package com.company;
 
+import com.company.Herbivours.Rabbit;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Rabbit rabbit = new Rabbit(5);
     }
 }

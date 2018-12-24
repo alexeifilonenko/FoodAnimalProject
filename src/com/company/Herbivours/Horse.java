@@ -5,6 +5,10 @@ import com.company.Herbivorous;
 public class Horse extends Herbivorous {
     private int weightHorse;
 
+    public Horse(int weight) {
+        super(weight);
+    }
+
     public int getWeightHorse() {
         return weightHorse;
     }
