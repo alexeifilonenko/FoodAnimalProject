@@ -2,7 +2,7 @@ package com.company;
 
  public abstract class Animal implements Meat {
 
-    private int weight;
+    protected int weight;
 
      public Animal(int weight) {
          this.weight = weight;
@@ -13,8 +13,8 @@ package com.company;
      }
 
      @Override
-    public void getWeight() {
-
+    public int getWeight() {
+        return weight;
     }
 
    public abstract int toEat(Food food);

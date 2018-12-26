@@ -1,5 +1,5 @@
 package com.company;
 
 public interface Food {
-    public void getWeight();
+    public int getWeight();
 }

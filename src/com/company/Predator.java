@@ -7,10 +7,11 @@ public class Predator extends Animal {
 
     @Override
     public int toEat(Food food) {
-        if(food instanceof Meat) {
-            return ;
+        if (food instanceof Meat) {
+            weight = weight + food.getWeight();
         } else {
-            System.out.println("Predators eats only meat");
+            System.out.println("Predator eats only meat");
         }
+        return weight;
     }
 }

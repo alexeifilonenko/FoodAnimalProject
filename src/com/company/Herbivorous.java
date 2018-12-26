@@ -8,9 +8,10 @@ public class Herbivorous extends Animal {
     @Override
     public int toEat(Food food) {
         if (food instanceof Grass) {
-
+            weight = weight + food.getWeight();
         } else {
             System.out.println("Herbivorous eats only grass");
         }
+        return weight;
     }
 }
